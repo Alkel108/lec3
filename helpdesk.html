@@ -2,11 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <meta description="helpdesk" keywords="things" author="alex">
+    <title>CWA Help Desk Appointment</title>
+
 </head>
 <body>
-    
+
+    <a href="https://www.swinburne.edu.au/"><img src="logo.png" alt="swin logo"></a>
+    <h1>CWA Help Desk Appointment</h1>
+    <p> The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday
+        <br>Check Blackboard for when CWA tutors will be there.
+    </p>
+    <form method="studentID" action="g.com"></form>
+        <fieldset >
+            
+            <legend>Student Details</legend>
+            
+            
+            <p>
+                <label for="ID">Studnet ID </label>
+                <input type="text" id="ID" name="id"  pattern=".{7,10}" required>
+            </p>
+            <p>
+                <label for="Name">Given Name</label>
+                <input id="Name" type="text" name="name" required>
+                <label for="FamName" type="text" >Family Name</label>
+                <input id="FamName" name="lastname" required>
+            </p>
+              
+            
+        </fieldset>  
+        <fieldset>
+            <legend>Your unit</legend>
+            <p>
+                <input type="radio" id="COS10011" name="unit" required="required"><label for="COS10011">COS10011</label>
+                <input type="radio" id="COS60004" name="unit"><label for="COS60004">COS60004</label> 
+                <input type="radio" id="COS60007" name="unit"><label for="COS60007">COS60007</label> 
+            </p>
+            <p>
+                <label for="Tutor">Your Tutor</label>
+                <select id="Tutor" type="range">
+                    <option value="">Please Select</option>
+                    <option value="Joe" name="Joe">Joe</option>
+                </select>
+            </p>
+        </fieldset> 
+        <fieldset>
+
+            <legend>Issue</legend>
+            <p>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="HTML" name="language[]" checked>
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="CSS" name="language[]">
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="JavaScript" name="language[]">
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="PHP" name="language[]">
+            <label for="MySQL">MySQL</label>
+            <input type="checkbox" id="MySQL" name="language[]">
+            </p>
+            <p>
+                <label for="description">Description of Issue</label> 
+                <br>
+                <textarea id="description" name="description"placeholder="Write a description here"></textarea>
+                
+
+
+            </p>
+        </fieldset>
+        <fieldset id="date/time"><legend>Preferred Date / Time</legend> 
+            <p><label for="date">Date </label><input type="date" placeholder="dd-mm-yyyy" pattern="placeholder" name="Date"></p>
+            <p><label for="time">Time </label><input type="time" placeholder="00:00" name="time" pattern="\d{2}:\d{2}"></p>
+
+
+
+
+
+        </fieldset>
+    </form>
+
+
 </body>
 </html>
